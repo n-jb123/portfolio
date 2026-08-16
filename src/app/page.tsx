@@ -1,17 +1,22 @@
+'use client'
 import { OutlineButton } from "@/component/buttons/OutlineButton";
 import PrimaryButton from "@/component/buttons/PrimaryButtons";
 import { Card } from "@/component/card/card";
 import { Divider } from "@/component/divider/divider";
-import { Stack, Typography } from "@mui/material";
-import {SwitchMode}from '@/component/'
+import { SearchBar } from "@/component/searchBar/searchBar";
+import { SwitchMode } from "@/component/switchMode/SwitchMode";
+import { Box, Stack, Typography } from "@mui/material";
+import { useTheme } from "@/theme/provider/themeProvider";
 export default function Home() {
+
+  const {Mode, handleToggleTheme}=useTheme()
   return (
-    <Stack>
+    <Stack spacing={2}>
        <Typography variant="h1">
       buttons
     </Typography>
     <Divider width={'30%'} height={'2px'}/>
-    <Stack direction={'row'}>
+    <Stack direction={'row'} spacing={1}>
       <OutlineButton onClick={()=>{}}>
         outline
       </OutlineButton>
@@ -38,7 +43,10 @@ export default function Home() {
     <Divider width={'70%'} height={'4px'}/>
     <Typography>switch toggle</Typography>
     <Divider width={'30%'} height={'2px'}/>
-    <SwitchMode/>
+    <Box sx={{width:'25px' , height:'24px'}}>
+      <SwitchMode Mode={Mode} handleToggleTheme={handleToggleTheme}/>
+    </Box>
+    
     </Stack>
    
   );
