@@ -30,7 +30,7 @@ export default function PrimaryButton({
         },
       }}
     >
-      <Typography>{children}</Typography>
+      <Typography sx={{color:'text.primary'}}>{children}</Typography>
     </Button>
   );
 }

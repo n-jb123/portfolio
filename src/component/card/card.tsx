@@ -7,6 +7,7 @@ export const Card = ({
   children,
   height = "100%",
   width = "100%",
+  borderRadius= "0.5rem"
 }: cardType) => (
   <Box
     sx={{
@@ -18,13 +19,13 @@ export const Card = ({
       alignItems: "center",
       justifyContent: "center",
       overflow: "hidden",
-      borderRadius: "24px",
+      borderRadius,
       backdropFilter: "blur(4px)",
-      background: "rgba(255,255,255,0.06)",
-      border: "1px solid rgba(255,255,255,0.12)",
-      boxShadow: "0 20px 60px rgba(170, 104, 6, 0.35)",
+      background: "#2564eb50",
+      border: "1px solid #2564eb",
+      boxShadow: "0 20px 60px #2564eb50",
       textAlign: "center",
-      padding: "16px",
+      padding: "32px",
       cursor: "pointer",
       transformStyle: "preserve-3d",
       "&:before": {

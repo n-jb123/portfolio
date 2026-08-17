@@ -9,7 +9,7 @@ export const Divider = ({ height, width }: dividerType) => (
       height,
       width,
       borderRadius: "10px",
-      background: "linear-gradient(90deg, #ff8800ff, #faef8bff, transparent)",
+      background: "linear-gradient(90deg, #667EEA, #764BA2, transparent)",
       opacity: 0.6,
     }}
   />
