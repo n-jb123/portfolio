@@ -17,12 +17,11 @@ export default function PrimaryButton({
       sx={{
         width: width,
         height: height,
-        backgroundColor: "primary.main",
+        backgroundColor: "secondary.main",
         color: "text.inverseOnSurface",
         borderRadius: "0.5rem",
         padding: "16px",
         boxShadow: "0 0 10px",
-        shadowColor: "primary.activeNavigation",
         transition: "all 0.5s ease",
         "&:hover": {
           boxShadow: "0 0 20px",

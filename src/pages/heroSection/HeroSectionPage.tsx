@@ -8,7 +8,7 @@ export const HeroSectionPage = ()=>{
     return(
         <Stack direction={'column'} sx={{alignItems:'center' , justifyContent:'center'}}>
             <Header/>
-            <Stack direction={'row'} spacing={4} sx={{alignItems:'center'}}>
+            <Stack direction={{xs:'column',md:'row'}} spacing={4} sx={{alignItems:'center'}}>
                <CVHeroSection/> 
                <HeroText/>
                <InformationSection/>

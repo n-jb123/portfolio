@@ -6,12 +6,12 @@ import { WidthFull } from "@mui/icons-material"
 
 export const Layout = ({children}:{children:ReactNode})=>{
     return(
-        <Stack direction={'column'}>
+        <Stack direction={'column'} sx={{overflow:'hidden'}}>
             <Box sx={{width:'100%' , height:'10vh'}}>
               <Header/>  
             </Box>
             
-            <Box sx={{width:'100%' , height:'85vh'}}>
+            <Box sx={{width:'100%' , height:'85vh', overflow:'auto'}}>
                 {children}
             </Box>
 

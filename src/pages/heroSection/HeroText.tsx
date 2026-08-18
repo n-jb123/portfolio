@@ -39,7 +39,7 @@ export const HeroText = () => {
         variant="body1"
         dangerouslySetInnerHTML={{ __html: "&lt;/P&gt;" }}
       />
-      <PrimaryButton width={"20%"}>let’s talk</PrimaryButton>
+      <PrimaryButton width={{xs:'100%',md:'30%'}}>let’s talk</PrimaryButton>
     </Stack>
   );
 };
